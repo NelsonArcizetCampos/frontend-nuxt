@@ -1,7 +1,20 @@
 {
   "eslint.validate": ["javascript", "typescript", "vue"],
-  "volar.takeOverMode.enabled": true, // Better Vue type checking
+  "volar.takeOverMode.enabled": true,
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "Vue.volar",
-  "typescript.tsdk": "node_modules/typescript/lib" // For TS projects
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "cSpell.words": ["nuxt", "nuxtjs"]
 }

@@ -2,35 +2,37 @@
   "name": "frontend-nuxt",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
     "start": "nuxt start",
-    "lint": "eslint --ext .js,.vue --fix",
-    "format": "prettier --write .",
     "type-check": "vue-tsc --noEmit",
     "clean": "rm -rf .nuxt node_modules"
   },
   "dependencies": {
     "axios": "^1.8.4",
-    "nuxt": "^3.16.1",
+    "nuxt": "^3.16.2",
     "nuxt-auth": "^2.0.10",
     "pinia": "^3.0.1",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^12.1.0",
+    "@eslint/js": "^9.23.0",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@types/node": "^22.13.16",
-    "@typescript-eslint/eslint-plugin": "^8.29.0",
-    "@typescript-eslint/parser": "^8.29.0",
     "eslint": "^9.23.0",
     "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.5",
+    "eslint-plugin-vue": "^10.0.0",
+    "globals": "^16.0.0",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "tailwindcss": "^4.0.17",
     "typescript": "^5.8.2",
+    "typescript-eslint": "^8.29.0",
+    "vue-eslint-parser": "^10.1.1",
     "vue-tsc": "^2.2.8"
   },
   "browserslist": [
@@ -41,10 +43,5 @@
   "engines": {
     "node": ">=22.0.0",
     "pnpm": ">=10.0.0"
-  },
-  "prettier": {
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
   }
 }
