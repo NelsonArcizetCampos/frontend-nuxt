@@ -1,0 +1,7 @@
+{
+  "eslint.validate": ["javascript", "typescript", "vue"],
+  "volar.takeOverMode.enabled": true, // Better Vue type checking
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "Vue.volar",
+  "typescript.tsdk": "node_modules/typescript/lib" // For TS projects
+}
