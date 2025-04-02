@@ -16,5 +16,16 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["nuxt", "nuxtjs"]
+  "cSpell.words": ["nuxt", "nuxtjs"],
+  "cSpell.ignoreWords": [
+    "Bnunmt",
+    "Cush",
+    "GWWG",
+    "Jiia",
+    "Kcdh",
+    "LRNM",
+    "Nwog",
+    "Qoeu",
+    "vncn"
+  ]
 }

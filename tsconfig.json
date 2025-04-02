@@ -9,12 +9,14 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
+    "baseUrl": ".",
     "noEmit": true,
     "jsx": "preserve",
-    "types": [],
+    "types": ["nuxt"],
     "paths": {
       "~/*": ["./*"],
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "#app": ["./node_modules/nuxt/dist/app"]
     }
   },
   "include": ["./**/*", ".nuxt/types/**/*.ts"],
