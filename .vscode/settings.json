@@ -16,7 +16,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": ["nuxt", "nuxtjs"],
+  "cSpell.words": ["color", "nuxt", "nuxtjs"],
   "cSpell.ignoreWords": [
     "Bnunmt",
     "Cush",
@@ -27,5 +27,8 @@
     "Nwog",
     "Qoeu",
     "vncn"
-  ]
+  ],
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
 }
