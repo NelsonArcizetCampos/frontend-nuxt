@@ -1,35 +1,35 @@
 <template>
-  <div class="flex items-center justify-center min-h-screen bg-gray-100">
-    <div class="p-6 bg-white rounded-lg shadow-lg">
-      <h2 class="text-2xl font-semibold mb-4">Login</h2>
+  <div class="flex items-center justify-center min-h-screen bg-gray-900">
+    <div class="p-6 bg-gray-800 text-white border-4 border-black">
+      <h2 class="text-3xl font-bold mb-4">Login</h2>
       <form @submit.prevent="submitLogin">
         <div class="mb-4">
-          <label for="password" class="block text-sm font-medium text-gray-700"
+          <label for="password" class="block text-lg font-bold mb-2"
             >Password</label
           >
           <input
             v-model="password"
             type="password"
             id="password"
-            class="w-full px-4 py-2 border rounded-lg"
+            class="w-full px-4 py-2 border-2 border-black bg-gray-700 text-white focus:outline-none"
             placeholder="Enter your password"
           />
         </div>
         <button
           type="submit"
-          class="w-full px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
+          class="w-full px-4 py-2 bg-black text-white border-2 border-black uppercase font-bold hover:bg-gray-700"
         >
           Submit
         </button>
       </form>
-      <p v-if="response" class="mt-4 text-green-600">{{ response }}</p>
+      <p v-if="response" class="mt-4 text-red-500">{{ response }}</p>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { navigateTo } from '#app'; // Import navigateTo for redirection
+import { navigateTo } from '#app';
 
 defineOptions({
   name: 'LoginPage',
@@ -50,10 +50,8 @@ async function submitLogin() {
     const data = await res.json();
 
     if (res.ok) {
-      // Redirect to the home page on successful login
       navigateTo('/');
     } else {
-      // Display the error message from the server
       response.value = data.message || 'Login failed.';
     }
   } catch {
@@ -64,6 +62,25 @@ async function submitLogin() {
 
 <style scoped>
 body {
-  background-color: #f5f5f5;
+  background-color: #333333;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+input,
+button {
+  font-family: Arial, sans-serif;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+button:hover {
+  cursor: pointer;
 }
 </style>

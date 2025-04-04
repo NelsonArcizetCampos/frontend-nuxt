@@ -1,4 +1,3 @@
-// server/api/image/[id].ts
 export default defineEventHandler(async (event) => {
   const { IMAGE_PROXY_URL, API_SECRET_KEY } = useRuntimeConfig();
   const { id } = event.context.params;
